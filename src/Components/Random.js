@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, Route } from 'react-router-dom'
+// import Meal from './Meal';
 
 
 const Random = () => {
@@ -27,18 +28,20 @@ if (!recipes) {
    return <p>Loading...</p>
 }
 
+
     return (
 			<div>
 				<h3>Click the button for another choice!</h3>
 				<button onClick={handleClick}>Randomize!</button>
 
+				
 				<h4>
 					{recipes.meals[0].strMeal} | {recipes.meals[0].strArea}
 				</h4>
 				<img src={recipes.meals[0].strMealThumb} alt='' />
 				
 				<p>
-					{recipes.meals[0].strMeasure1} {recipes.meals[0].strIngredient1}
+					{recipes.meals[0].strMeasure1}  {recipes.meals[0].strIngredient1}
 				</p>
 				<p>
 					{recipes.meals[0].strMeasure2} {recipes.meals[0].strIngredient2}
@@ -98,6 +101,15 @@ if (!recipes) {
 					{recipes.meals[0].strMeasure20} {recipes.meals[0].strIngredient20}
 				</p>
 				<p>{recipes.meals[0].strInstructions}</p>
+
+
+                {/* <Route path='/meal' render={(routerProps)=> {
+                    return (
+                        <Meal
+                            recipes={recipes}
+                        />
+                    )
+                }} /> */}
 			</div>
 		);
 };
