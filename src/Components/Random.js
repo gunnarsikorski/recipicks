@@ -1,17 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Link, Route } from 'react-router-dom';
-import Jumbotron from 'react-bootstrap/Jumbotron'
-import Button from 'react-bootstrap/Button'
-import Container from 'react-bootstrap/Container'
-import Image from 'react-bootstrap/Image'
-import Col from 'react-bootstrap/Col'
-import Row from 'react-bootstrap/Row'
-import Card from 'react-bootstrap/Card'
+import Jumbotron from 'react-bootstrap/Jumbotron';
+import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
+import Image from 'react-bootstrap/Image';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+import Card from 'react-bootstrap/Card';
 import ReactPlayer from 'react-player';
 import Accordion from 'react-bootstrap/Accordion';
-
-
-
 
 const Random = () => {
 	const [recipes, setRecipes] = useState('');
@@ -44,7 +41,7 @@ const Random = () => {
 					size='lg'
 					block
 					style={{ marginBottom: '3rem', marginTop: '-1.5rem' }}>
-					Find another!
+					Find another recipe!
 				</Button>
 				<Row>
 					<Col xs={6} md={7}>
@@ -149,18 +146,15 @@ const Random = () => {
 				<p style={{ marginTop: '2rem' }}>{recipes.meals[0].strInstructions}</p>
 
 				<Accordion>
-					
-						
-							<Accordion.Toggle as={Button} variant='outline-dark' eventKey='0'>
-								Video Tutorial
-							</Accordion.Toggle>
-						
-						<Accordion.Collapse eventKey='0'>
-							<Card.Body>
-								<ReactPlayer url={recipes.meals[0].strYoutube} />
-							</Card.Body>
-						</Accordion.Collapse>
-					
+					<Accordion.Toggle as={Button} variant='outline-dark' eventKey='0'>
+						Video Tutorial
+					</Accordion.Toggle>
+
+					<Accordion.Collapse eventKey='0'>
+						<Card.Body>
+							<ReactPlayer url={recipes.meals[0].strYoutube} />
+						</Card.Body>
+					</Accordion.Collapse>
 				</Accordion>
 			</Container>
 		</Jumbotron>
