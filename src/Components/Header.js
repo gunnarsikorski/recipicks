@@ -12,8 +12,11 @@ const Header = () => {
 				<Navbar.Toggle aria-controls='basic-navbar-nav' />
 				<Navbar.Collapse id='basic-navbar-nav'>
 					<Nav>
-						<Nav.Link as={Link} to='/randomize'>
-							Randomize
+						<Nav.Link as={Link} to='/food'>
+							Food
+						</Nav.Link>
+						<Nav.Link as={Link} to='/drink'>
+							Drink
 						</Nav.Link>
 					</Nav>
 				</Navbar.Collapse>

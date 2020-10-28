@@ -14,7 +14,7 @@ API(s)
 - The Meal DB
 - Link: https://www.themealdb.com/
 
-Frameworks etc.
+Frameworks, Sources etc.
 - React
 - Bootstrap
 - Found how to use React Player on Coder Rocket Fuel 
