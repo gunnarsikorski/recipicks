@@ -55,35 +55,33 @@ const Home = () => {
 				<Container>
 					<h2 style={{ paddingBottom: '1.25rem' }}>Welcome to Recipicks!</h2>
 					<p>
-						There are days when I want to whip up a delicious meal but I'm
-						lacking the inspiration to decide what exactly that will be. Other
-						days I may be so indecisive that I end up falling back to a tried
-						and true staple, but that can get old! There are even days when I
-						just can't find anything in my cookbooks and want to try something
-						new.
-					</p>
-					<p>
-						That's where Recipicks takes the reigns. Using the randomizer, you
-						can cycle through over 250 dishes that cover breakfast to dinner,
-						starters to desert, varying experience levels, and span numerous
-						regional profiles. <Link to='/food'>Give it a try!</Link>
-					</p>
-					<p>
-						Recipicks is perfect for a date night in, a dinner party, or even
-						just to entertain yourself on a weeknight! Keep in mind some recipes
-						may not have tutorial videos, and the measurements are using a
-						metric system.
-					</p>
-					<p>
-						Want to do the same thing but for Cocktails?{' '}
-						<Link to='/drink'>Try this!</Link>
+						So glad you've decided to give Recipicks a try. I hope you discover
+						some great recipes! It's relatively straight forward but head to our{' '}
+						<Link to='/about'>About</Link> page to find out more about how it
+						works and why I made it. Otherwise feel free to{' '}
+						<Link to='/food'>give it a try!</Link>
 					</p>
 				</Container>
 			</Jumbotron>
-			<Row>
-				<Col></Col>
-				<Col></Col>
-				<Col></Col>
+			<Row style={{marginTop: '-1.95rem'}}>
+				<Col style={{ marginRight: '-1.9rem' }}>
+					<Image
+						src='https://images.unsplash.com/photo-1596464372839-fd7b1eaea27e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80'
+						fluid
+					/>
+				</Col>
+				<Col style={{ marginRight: '-1.9rem' }}>
+					<Image
+						src='https://images.unsplash.com/photo-1518393074848-dbe5f641a735?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80'
+						fluid
+					/>
+				</Col>
+				<Col>
+					<Image
+						src='https://images.unsplash.com/photo-1569718212165-3a8278d5f624?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80'
+						fluid
+					/>
+				</Col>
 			</Row>
 		</>
 	);

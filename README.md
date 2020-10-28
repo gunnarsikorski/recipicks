@@ -12,11 +12,14 @@ I love cooking at home. I love exploring new dishes and trying recipes that chal
 
 API(s)
 - The Meal DB
+- The Cocktail DB
 - Link: https://www.themealdb.com/
+- Link: https://www.thecocktaildb.com/
 
 Frameworks, Sources etc.
 - React
 - Bootstrap
+- Unsplash for Homepage images
 - Found how to use React Player on Coder Rocket Fuel 
 
 ---
