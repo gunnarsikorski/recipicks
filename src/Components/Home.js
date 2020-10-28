@@ -63,7 +63,7 @@ const Home = () => {
 					</p>
 				</Container>
 			</Jumbotron>
-			<Row style={{marginTop: '-1.95rem'}}>
+			<Row style={{marginTop: '-2rem'}}>
 				<Col style={{ marginRight: '-1.9rem' }}>
 					<Image
 						src='https://images.unsplash.com/photo-1596464372839-fd7b1eaea27e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80'
