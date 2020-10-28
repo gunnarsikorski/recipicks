@@ -9,7 +9,7 @@ const Home = () => {
 				<Container>
 					<h2 style={{paddingBottom: '1.25rem'}}>Welcome to Recipicks!</h2>
 					<p>
-						There are days when I want to whip up a delicious meal but maybe I'm
+						There are days when I want to whip up a delicious meal but I'm
 						lacking the inspiration to decide what exactly that will be. Other
 						days I may be so indecisive that I end up falling back to a tried
 						and true staple, but that can get old! There are even days when I
@@ -18,7 +18,7 @@ const Home = () => {
 					</p>
 					<p>
 						That's where Recipicks takes the reigns. Using the randomizer,
-						I can cycle through a plethora of dishes that cover breakfast to
+						you can cycle through over 250 dishes that cover breakfast to
 						dinner, starters to desert, varying experience levels, and span
 						numerous regional profiles.{' '}
 						<Link to='/randomize'>Give it a try!</Link>

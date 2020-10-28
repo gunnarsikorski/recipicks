@@ -17,6 +17,7 @@ API(s)
 Frameworks etc.
 - React
 - Bootstrap
+- Found how to use React Player on Coder Rocket Fuel 
 
 ---
 

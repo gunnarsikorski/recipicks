@@ -7,8 +7,11 @@ import Image from 'react-bootstrap/Image'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import Card from 'react-bootstrap/Card'
-import './Styling/Random.css'
-// import Meal from './Meal';
+import ReactPlayer from 'react-player';
+import Accordion from 'react-bootstrap/Accordion';
+
+
+
 
 const Random = () => {
 	const [recipes, setRecipes] = useState('');
@@ -40,16 +43,27 @@ const Random = () => {
 					variant='dark'
 					size='lg'
 					block
-					cursor='pointer'
 					style={{ marginBottom: '3rem', marginTop: '-1.5rem' }}>
 					Find another!
 				</Button>
 				<Row>
 					<Col xs={6} md={7}>
 						<Card body bg={'light'} border={'dark'}>
-							<h4 style={{borderBottom: 'solid', borderWidth: 'thin', paddingBottom: '.66rem'}}>{recipes.meals[0].strMeal}</h4>
+							<h4
+								style={{
+									borderBottom: 'solid',
+									borderWidth: 'thin',
+									paddingBottom: '.66rem',
+								}}>
+								{recipes.meals[0].strMeal}
+							</h4>
 
-                            <h5 style={{ fontStyle: 'italic', fontWeight: '300', marginBottom: '1.5rem'}}>
+							<h5
+								style={{
+									fontStyle: 'italic',
+									fontWeight: '300',
+									marginBottom: '1.5rem',
+								}}>
 								{recipes.meals[0].strArea}
 							</h5>
 							<Image rounded src={recipes.meals[0].strMealThumb} fluid />
@@ -57,7 +71,7 @@ const Random = () => {
 					</Col>
 					<Col>
 						<Card body bg={'light'} border={'dark'}>
-                            <h5 style={{marginBottom: '1rem'}}>Ingredients:</h5>
+							<h5 style={{ marginBottom: '1rem' }}>Ingredients:</h5>
 							<p style={{ marginBottom: '.2rem' }}>
 								{recipes.meals[0].strMeasure1} {recipes.meals[0].strIngredient1}
 							</p>
@@ -68,19 +82,19 @@ const Random = () => {
 								{recipes.meals[0].strMeasure3} {recipes.meals[0].strIngredient3}
 							</p>
 							<p style={{ marginBottom: '.2rem' }}>
-								{recipes.meals[0].strMeasure4}  {recipes.meals[0].strIngredient4}
+								{recipes.meals[0].strMeasure4} {recipes.meals[0].strIngredient4}
 							</p>
 							<p style={{ marginBottom: '.2rem' }}>
-								{recipes.meals[0].strMeasure5}  {recipes.meals[0].strIngredient5}
+								{recipes.meals[0].strMeasure5} {recipes.meals[0].strIngredient5}
 							</p>
 							<p style={{ marginBottom: '.2rem' }}>
-								{recipes.meals[0].strMeasure6}  {recipes.meals[0].strIngredient6}
+								{recipes.meals[0].strMeasure6} {recipes.meals[0].strIngredient6}
 							</p>
 							<p style={{ marginBottom: '.2rem' }}>
 								{recipes.meals[0].strMeasure7} {recipes.meals[0].strIngredient7}
 							</p>
 							<p style={{ marginBottom: '.2rem' }}>
-								{recipes.meals[0].strMeasure8}  {recipes.meals[0].strIngredient8}
+								{recipes.meals[0].strMeasure8} {recipes.meals[0].strIngredient8}
 							</p>
 							<p style={{ marginBottom: '.2rem' }}>
 								{recipes.meals[0].strMeasure9} {recipes.meals[0].strIngredient9}
@@ -134,13 +148,20 @@ const Random = () => {
 				</Row>
 				<p style={{ marginTop: '2rem' }}>{recipes.meals[0].strInstructions}</p>
 
-				{/* <Route path='/meal' render={(routerProps)=> {
-                    return (
-                        <Meal
-                            recipes={recipes}
-                        />
-                    )
-                }} /> */}
+				<Accordion>
+					
+						
+							<Accordion.Toggle as={Button} variant='outline-dark' eventKey='0'>
+								Video Tutorial
+							</Accordion.Toggle>
+						
+						<Accordion.Collapse eventKey='0'>
+							<Card.Body>
+								<ReactPlayer url={recipes.meals[0].strYoutube} />
+							</Card.Body>
+						</Accordion.Collapse>
+					
+				</Accordion>
 			</Container>
 		</Jumbotron>
 	);

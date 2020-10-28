@@ -4,9 +4,11 @@ import './App.css';
 import Header from './Components/Header'
 import Home from './Components/Home'
 import Random from './Components/Random'
-import Meal from './Components/Meal'
+
+// import Meal from './Components/Meal'
 
 function App() {
+  
   return (
 		<div>
 			<Header />
@@ -14,7 +16,8 @@ function App() {
       <main>
         <Route path='/' exact component={Home} />
         <Route path='/randomize' component={Random}/>
-        {/* <Route path='/meal' component={Meal} /> */}
+        
+        
       </main>
 		</div>
 	);
