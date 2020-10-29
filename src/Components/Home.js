@@ -53,11 +53,11 @@ const Home = () => {
 
 			<Jumbotron>
 				<Container>
-					<h2 style={{ paddingBottom: '1.25rem' }}>Welcome to Recipicks!</h2>
+					<h2 style={{ paddingBottom: '1.25rem' }}>Welcome to Recipicks</h2>
 					<p>
 						So glad you've decided to give Recipicks a try. I hope you discover
 						some great recipes! It's relatively straight forward but head to our{' '}
-						<Link to='/about'>About</Link> page to find out more about how it
+						<Link to='/about'>About</Link> page to find out more on how it
 						works and why I made it. Otherwise feel free to{' '}
 						<Link to='/food'>give it a try!</Link>
 					</p>

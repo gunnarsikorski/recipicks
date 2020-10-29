@@ -40,7 +40,7 @@ const Drink = () => {
 							size='lg'
 							block
 							style={{ marginBottom: '3rem', marginTop: '-1.5rem' }}>
-							Find another!
+							Find another recipe!
 						</Button>
 						<Row>
 							<Col xs={6} md={7}>
