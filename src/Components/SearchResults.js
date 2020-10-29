@@ -10,7 +10,8 @@ import ReactPlayer from 'react-player';
 const SearchResults = ({ dishes }) => {
     
     return (
-			<div>
+        <div>
+            
 				{dishes.map((dish) => (
 					<Accordion style={{ marginTop: '1rem' }}>
 						<Accordion.Toggle
