@@ -33,14 +33,19 @@ const Drink = () => {
     return (
 			<>
 				<Jumbotron>
-					<Container>
+					<Container
+						style={{
+							borderBottom: 'solid',
+							paddingBottom: '2rem',
+							borderWidth: 'thin',
+						}}>
 						<Button
 							onClick={handleClick}
 							variant='dark'
 							size='lg'
 							block
 							style={{ marginBottom: '3rem', marginTop: '-1.5rem' }}>
-							Find another recipe!
+							Find another drink!
 						</Button>
 						<Row>
 							<Col xs={6} md={7}>
@@ -133,12 +138,34 @@ const Drink = () => {
 								</Card>
 							</Col>
 						</Row>
-						<p style={{ marginTop: '2rem'}}>
+						<p style={{ marginTop: '2rem' }}>
 							{drink.drinks[0].strInstructions}
 						</p>
 					</Container>
 				</Jumbotron>
-				
+				<Row style={{ marginTop: '-2rem' }}>
+					<Col style={{ marginRight: '-1.9rem' }}>
+						<Image
+							src='https://images.unsplash.com/photo-1554314591-31236f6872d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80'
+							fluid
+							
+						/>
+					</Col>
+					<Col style={{ marginRight: '-1.9rem' }}>
+						<Image
+							src='https://images.unsplash.com/photo-1592934935867-14426f90d3de?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80'
+							fluid
+							
+						/>
+					</Col>
+					<Col>
+						<Image
+							src='https://images.unsplash.com/photo-1568929218490-8d25a4332ec2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80'
+							fluid
+							
+						/>
+					</Col>
+				</Row>
 			</>
 		);
 };
