@@ -35,12 +35,7 @@ const Random = () => {
 	return (
 		<>
 			<Jumbotron>
-				<Container
-					style={{
-						borderBottom: 'solid',
-						paddingBottom: '2.5rem',
-						borderWidth: 'thin',
-					}}>
+				<Container>
 					<Button
 						onClick={handleClick}
 						variant='dark'
@@ -49,130 +44,139 @@ const Random = () => {
 						style={{ marginBottom: '3rem', marginTop: '-1.5rem' }}>
 						Find another recipe!
 					</Button>
-					<Row>
-						<Col xs={6} md={7}>
-							<Card body bg={'light'} border={'dark'}>
-								<h4
-									style={{
-										borderBottom: 'solid',
-										borderWidth: 'thin',
-										paddingBottom: '.66rem',
-									}}>
-									{recipes.meals[0].strMeal}
-								</h4>
+					<Card.Body
+						style={{
+							border: 'solid',
+							borderWidth: 'thin',
+							borderRadius: '10px',
+							marginTop: '1rem',
+							padding: '2.5rem'
+						}}>
+						<Row>
+							<Col xs={6} md={7}>
+								<Card body bg={'light'} border={'dark'}>
+									<h4
+										style={{
+											borderBottom: 'solid',
+											borderWidth: 'thin',
+											paddingBottom: '.66rem',
+										}}>
+										{recipes.meals[0].strMeal}
+									</h4>
 
-								<h5
-									style={{
-										fontStyle: 'italic',
-										fontWeight: '300',
-										marginBottom: '1.5rem',
-									}}>
-									{recipes.meals[0].strArea}
-								</h5>
-								<Image rounded src={recipes.meals[0].strMealThumb} fluid />
-							</Card>
-						</Col>
-						<Col>
-							<Card body bg={'light'} border={'dark'}>
-								<h5 style={{ marginBottom: '1rem' }}>Ingredients:</h5>
-								<p style={{ marginBottom: '.2rem' }}>
-									{recipes.meals[0].strMeasure1}{' '}
-									{recipes.meals[0].strIngredient1}
-								</p>
-								<p style={{ marginBottom: '.2rem' }}>
-									{recipes.meals[0].strMeasure2}{' '}
-									{recipes.meals[0].strIngredient2}
-								</p>
-								<p style={{ marginBottom: '.2rem' }}>
-									{recipes.meals[0].strMeasure3}{' '}
-									{recipes.meals[0].strIngredient3}
-								</p>
-								<p style={{ marginBottom: '.2rem' }}>
-									{recipes.meals[0].strMeasure4}{' '}
-									{recipes.meals[0].strIngredient4}
-								</p>
-								<p style={{ marginBottom: '.2rem' }}>
-									{recipes.meals[0].strMeasure5}{' '}
-									{recipes.meals[0].strIngredient5}
-								</p>
-								<p style={{ marginBottom: '.2rem' }}>
-									{recipes.meals[0].strMeasure6}{' '}
-									{recipes.meals[0].strIngredient6}
-								</p>
-								<p style={{ marginBottom: '.2rem' }}>
-									{recipes.meals[0].strMeasure7}{' '}
-									{recipes.meals[0].strIngredient7}
-								</p>
-								<p style={{ marginBottom: '.2rem' }}>
-									{recipes.meals[0].strMeasure8}{' '}
-									{recipes.meals[0].strIngredient8}
-								</p>
-								<p style={{ marginBottom: '.2rem' }}>
-									{recipes.meals[0].strMeasure9}{' '}
-									{recipes.meals[0].strIngredient9}
-								</p>
-								<p style={{ marginBottom: '.2rem' }}>
-									{recipes.meals[0].strMeasure10}{' '}
-									{recipes.meals[0].strIngredient10}
-								</p>
-								<p style={{ marginBottom: '.2rem' }}>
-									{recipes.meals[0].strMeasure11}{' '}
-									{recipes.meals[0].strIngredient11}
-								</p>
-								<p style={{ marginBottom: '.2rem' }}>
-									{recipes.meals[0].strMeasure12}{' '}
-									{recipes.meals[0].strIngredient12}
-								</p>
-								<p style={{ marginBottom: '.2rem' }}>
-									{recipes.meals[0].strMeasure13}{' '}
-									{recipes.meals[0].strIngredient13}
-								</p>
-								<p style={{ marginBottom: '.2rem' }}>
-									{recipes.meals[0].strMeasure14}{' '}
-									{recipes.meals[0].strIngredient14}
-								</p>
-								<p style={{ marginBottom: '.2rem' }}>
-									{recipes.meals[0].strMeasure15}{' '}
-									{recipes.meals[0].strIngredient15}
-								</p>
-								<p style={{ marginBottom: '.2rem' }}>
-									{recipes.meals[0].strMeasure16}{' '}
-									{recipes.meals[0].strIngredient16}
-								</p>
-								<p style={{ marginBottom: '.2rem' }}>
-									{recipes.meals[0].strMeasure17}{' '}
-									{recipes.meals[0].strIngredient17}
-								</p>
-								<p style={{ marginBottom: '.2rem' }}>
-									{recipes.meals[0].strMeasure18}{' '}
-									{recipes.meals[0].strIngredient18}
-								</p>
-								<p style={{ marginBottom: '.2rem' }}>
-									{recipes.meals[0].strMeasure19}{' '}
-									{recipes.meals[0].strIngredient19}
-								</p>
-								<p style={{ marginBottom: '.2rem' }}>
-									{recipes.meals[0].strMeasure20}{' '}
-									{recipes.meals[0].strIngredient20}
-								</p>
-							</Card>
-						</Col>
-					</Row>
-					<p style={{ marginTop: '2rem' }}>
-						{recipes.meals[0].strInstructions}
-					</p>
+									<h5
+										style={{
+											fontStyle: 'italic',
+											fontWeight: '300',
+											marginBottom: '1.5rem',
+										}}>
+										{recipes.meals[0].strArea}
+									</h5>
+									<Image rounded src={recipes.meals[0].strMealThumb} fluid />
+								</Card>
+							</Col>
+							<Col>
+								<Card body bg={'light'} border={'dark'}>
+									<h5 style={{ marginBottom: '1rem' }}>Ingredients:</h5>
+									<p style={{ marginBottom: '.2rem' }}>
+										{recipes.meals[0].strMeasure1}{' '}
+										{recipes.meals[0].strIngredient1}
+									</p>
+									<p style={{ marginBottom: '.2rem' }}>
+										{recipes.meals[0].strMeasure2}{' '}
+										{recipes.meals[0].strIngredient2}
+									</p>
+									<p style={{ marginBottom: '.2rem' }}>
+										{recipes.meals[0].strMeasure3}{' '}
+										{recipes.meals[0].strIngredient3}
+									</p>
+									<p style={{ marginBottom: '.2rem' }}>
+										{recipes.meals[0].strMeasure4}{' '}
+										{recipes.meals[0].strIngredient4}
+									</p>
+									<p style={{ marginBottom: '.2rem' }}>
+										{recipes.meals[0].strMeasure5}{' '}
+										{recipes.meals[0].strIngredient5}
+									</p>
+									<p style={{ marginBottom: '.2rem' }}>
+										{recipes.meals[0].strMeasure6}{' '}
+										{recipes.meals[0].strIngredient6}
+									</p>
+									<p style={{ marginBottom: '.2rem' }}>
+										{recipes.meals[0].strMeasure7}{' '}
+										{recipes.meals[0].strIngredient7}
+									</p>
+									<p style={{ marginBottom: '.2rem' }}>
+										{recipes.meals[0].strMeasure8}{' '}
+										{recipes.meals[0].strIngredient8}
+									</p>
+									<p style={{ marginBottom: '.2rem' }}>
+										{recipes.meals[0].strMeasure9}{' '}
+										{recipes.meals[0].strIngredient9}
+									</p>
+									<p style={{ marginBottom: '.2rem' }}>
+										{recipes.meals[0].strMeasure10}{' '}
+										{recipes.meals[0].strIngredient10}
+									</p>
+									<p style={{ marginBottom: '.2rem' }}>
+										{recipes.meals[0].strMeasure11}{' '}
+										{recipes.meals[0].strIngredient11}
+									</p>
+									<p style={{ marginBottom: '.2rem' }}>
+										{recipes.meals[0].strMeasure12}{' '}
+										{recipes.meals[0].strIngredient12}
+									</p>
+									<p style={{ marginBottom: '.2rem' }}>
+										{recipes.meals[0].strMeasure13}{' '}
+										{recipes.meals[0].strIngredient13}
+									</p>
+									<p style={{ marginBottom: '.2rem' }}>
+										{recipes.meals[0].strMeasure14}{' '}
+										{recipes.meals[0].strIngredient14}
+									</p>
+									<p style={{ marginBottom: '.2rem' }}>
+										{recipes.meals[0].strMeasure15}{' '}
+										{recipes.meals[0].strIngredient15}
+									</p>
+									<p style={{ marginBottom: '.2rem' }}>
+										{recipes.meals[0].strMeasure16}{' '}
+										{recipes.meals[0].strIngredient16}
+									</p>
+									<p style={{ marginBottom: '.2rem' }}>
+										{recipes.meals[0].strMeasure17}{' '}
+										{recipes.meals[0].strIngredient17}
+									</p>
+									<p style={{ marginBottom: '.2rem' }}>
+										{recipes.meals[0].strMeasure18}{' '}
+										{recipes.meals[0].strIngredient18}
+									</p>
+									<p style={{ marginBottom: '.2rem' }}>
+										{recipes.meals[0].strMeasure19}{' '}
+										{recipes.meals[0].strIngredient19}
+									</p>
+									<p style={{ marginBottom: '.2rem' }}>
+										{recipes.meals[0].strMeasure20}{' '}
+										{recipes.meals[0].strIngredient20}
+									</p>
+								</Card>
+							</Col>
+						</Row>
+						<p style={{ marginTop: '2rem' }}>
+							{recipes.meals[0].strInstructions}
+						</p>
 
-					<Accordion>
-						<Accordion.Toggle as={Button} variant='outline-dark' eventKey='0'>
-							Video Tutorial
-						</Accordion.Toggle>
+						<Accordion>
+							<Accordion.Toggle as={Button} variant='outline-dark' eventKey='0'>
+								Video Tutorial
+							</Accordion.Toggle>
 
-						<Accordion.Collapse eventKey='0'>
-							<Card.Body>
-								<ReactPlayer url={recipes.meals[0].strYoutube} />
-							</Card.Body>
-						</Accordion.Collapse>
-					</Accordion>
+							<Accordion.Collapse eventKey='0'>
+								<Card.Body>
+									<ReactPlayer url={recipes.meals[0].strYoutube} style={{}} />
+								</Card.Body>
+							</Accordion.Collapse>
+						</Accordion>
+					</Card.Body>
 				</Container>
 			</Jumbotron>
 			<Row style={{ marginTop: '-2rem' }}>
