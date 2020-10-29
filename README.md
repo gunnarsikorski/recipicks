@@ -19,7 +19,8 @@ API(s)
 Frameworks, Sources etc.
 - React
 - Bootstrap
-- Unsplash for Homepage images
+- Unsplash for Home and About page images
+- Favicon generator for favicon
 - Found how to use React Player on Coder Rocket Fuel 
 
 ---

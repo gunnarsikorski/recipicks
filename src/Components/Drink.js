@@ -133,7 +133,7 @@ const Drink = () => {
 								</Card>
 							</Col>
 						</Row>
-						<p style={{ marginTop: '2rem' }}>
+						<p style={{ marginTop: '2rem'}}>
 							{drink.drinks[0].strInstructions}
 						</p>
 					</Container>
