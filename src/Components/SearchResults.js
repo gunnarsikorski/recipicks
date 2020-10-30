@@ -134,7 +134,7 @@ const SearchResults = ({ dishes }) => {
 													url={dish.strYoutube}
 													width='100%'
 													height='100%'
-													controls='true'
+													controls={true}
 												/>
 											</div>
 										</Card.Body>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import SearchResults from './SearchResults';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
@@ -22,7 +22,6 @@ const Search = () => {
             .then((res) => {
                 
                 setDishes(res.meals)
-                // setLastSearch(search)
                 setSearch('')
             })
             .catch((error) => console.log(error));
@@ -37,10 +36,6 @@ const Search = () => {
         event.preventDefault()
         getMeals(search)
     }
-
-    // useEffect(() => {
-    //     getMeals(search)
-    // }, [])
 
 
     return (

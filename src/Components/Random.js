@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Link, Route } from 'react-router-dom';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
@@ -9,8 +8,7 @@ import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
 import ReactPlayer from 'react-player';
 import Accordion from 'react-bootstrap/Accordion';
-import './Styling/Random.css'
-
+import './Styling/Random.css';
 
 const Random = () => {
 	const [recipes, setRecipes] = useState('');
@@ -175,7 +173,13 @@ const Random = () => {
 							<Accordion.Collapse eventKey='0'>
 								<Card.Body>
 									<div className='player-wrapper'>
-										<ReactPlayer className='react-player' url={recipes.meals[0].strYoutube} width='100%' height='100%' controls= 'true'/>
+										<ReactPlayer
+											className='react-player'
+											url={recipes.meals[0].strYoutube}
+											width='100%'
+											height='100%'
+											controls={true}
+										/>
 									</div>
 								</Card.Body>
 							</Accordion.Collapse>
