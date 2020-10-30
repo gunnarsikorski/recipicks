@@ -51,7 +51,7 @@ const Drink = () => {
 								padding: '2.5rem',
 							}}>
 							<Row>
-								<Col xs={6} md={7}>
+								<Col>
 									<Card body bg={'light'} border={'dark'}>
 										<h4
 											style={{
