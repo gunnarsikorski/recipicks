@@ -21,7 +21,7 @@ Frameworks, Sources etc.
 - Bootstrap
 - Unsplash for Home and About page images
 - Favicon generator for favicon
-- Found how to use React Player on Coder Rocket Fuel 
+- Found how to use React Player on Coder Rocket Fuel and React Player github repo
 
 ---
 

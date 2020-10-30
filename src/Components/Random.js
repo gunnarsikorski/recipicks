@@ -9,6 +9,8 @@ import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
 import ReactPlayer from 'react-player';
 import Accordion from 'react-bootstrap/Accordion';
+import './Styling/Random.css'
+
 
 const Random = () => {
 	const [recipes, setRecipes] = useState('');
@@ -50,7 +52,7 @@ const Random = () => {
 							borderWidth: 'thin',
 							borderRadius: '10px',
 							marginTop: '1rem',
-							padding: '2.5rem'
+							padding: '2.5rem',
 						}}>
 						<Row>
 							<Col>
@@ -172,7 +174,9 @@ const Random = () => {
 
 							<Accordion.Collapse eventKey='0'>
 								<Card.Body>
-									<ReactPlayer url={recipes.meals[0].strYoutube} style={{}} />
+									<div className='player-wrapper'>
+										<ReactPlayer className='react-player' url={recipes.meals[0].strYoutube} width='100%' height='100%'/>
+									</div>
 								</Card.Body>
 							</Accordion.Collapse>
 						</Accordion>
