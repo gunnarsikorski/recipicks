@@ -6,12 +6,12 @@ import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import ReactPlayer from 'react-player';
+import './Styling/SearchResults.css'
 
 const SearchResults = ({ dishes }) => {
     
     return (
-        <div>
-            
+			<div>
 				{dishes.map((dish) => (
 					<Accordion style={{ marginTop: '1rem' }}>
 						<Accordion.Toggle
@@ -22,7 +22,13 @@ const SearchResults = ({ dishes }) => {
 							{dish.strMeal}
 						</Accordion.Toggle>
 						<Accordion.Collapse eventKey='0'>
-							<Card.Body style={{border: 'solid', borderRadius: '10px',marginTop: '1rem'}}>
+							<Card.Body
+								style={{
+									border: 'solid',
+									borderRadius: '10px',
+                                    marginTop: '1rem',
+                                    padding: '2.5rem'
+								}}>
 								<Row>
 									<Col>
 										<Card body bg={'light'} border={'dark'}>
@@ -112,20 +118,28 @@ const SearchResults = ({ dishes }) => {
 									</Col>
 								</Row>
 								<p style={{ marginTop: '2rem' }}>{dish.strInstructions}</p>
-							<Accordion>
-								<Accordion.Toggle
-									as={Button}
-									variant='outline-dark'
-									eventKey='1'>
-									Video Tutorial
-								</Accordion.Toggle>
+								<Accordion>
+									<Accordion.Toggle
+										as={Button}
+										variant='outline-dark'
+										eventKey='1'>
+										Video Tutorial
+									</Accordion.Toggle>
 
-								<Accordion.Collapse eventKey='1'>
-									<Card.Body>
-										<ReactPlayer url={dish.strYoutube} />
-									</Card.Body>
-								</Accordion.Collapse>
-							</Accordion>
+									<Accordion.Collapse eventKey='1'>
+										<Card.Body>
+											<div className='player-wrapper'>
+												<ReactPlayer
+													className='react-player'
+													url={dish.strYoutube}
+													width='100%'
+													height='100%'
+													controls='true'
+												/>
+											</div>
+										</Card.Body>
+									</Accordion.Collapse>
+								</Accordion>
 							</Card.Body>
 						</Accordion.Collapse>
 					</Accordion>

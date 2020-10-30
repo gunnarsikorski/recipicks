@@ -175,7 +175,7 @@ const Random = () => {
 							<Accordion.Collapse eventKey='0'>
 								<Card.Body>
 									<div className='player-wrapper'>
-										<ReactPlayer className='react-player' url={recipes.meals[0].strYoutube} width='100%' height='100%'/>
+										<ReactPlayer className='react-player' url={recipes.meals[0].strYoutube} width='100%' height='100%' controls= 'true'/>
 									</div>
 								</Card.Body>
 							</Accordion.Collapse>
